@@ -4,28 +4,29 @@ import java.util.Objects;
 
 public class InvoiceSummary {
 
-    public int numberOfRides;
-    public double totalFare;
-    public double averageFarePerRide;
+    private final int numofRides;
+    private final double totalFare;
+    private final double averageFare;
 
-    public InvoiceSummary(int length, double totalFare) {
-        this.numberOfRides = length;
+    public InvoiceSummary(int numofRides, double totalFare, double averageFare) {
+        this.numofRides = numofRides;
         this.totalFare = totalFare;
-        this.averageFarePerRide = this.totalFare / this.numberOfRides;
+        this.averageFare = averageFare;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        InvoiceSummary summary = (InvoiceSummary) o;
-        return numberOfRides == summary.numberOfRides &&
-                Double.compare(summary.totalFare, totalFare) == 0 &&
-                Double.compare(summary.averageFarePerRide, averageFarePerRide) == 0;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(numberOfRides, totalFare, averageFarePerRide);
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
+        InvoiceSummary other = (InvoiceSummary) obj;
+        if (Double.doubleToLongBits(averageFare) != Double.doubleToLongBits(other.averageFare))
+            return false;
+        if (numofRides != other.numofRides)
+            return false;
+        if (Double.doubleToLongBits(totalFare) != Double.doubleToLongBits(other.totalFare))
+            return false;
+        return true;
     }
 }
