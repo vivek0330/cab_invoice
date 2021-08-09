@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.InvoiceServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-09T18:23:32" hostname="DESKTOP-UD4BENK" time="0.013">
-  <properties/>
-  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare" classname="com.bridgelabz.InvoiceServiceTest" time="0.004"/>
-  <testcase name="givenMultipleRides_ShouldReturnTotalFare" classname="com.bridgelabz.InvoiceServiceTest" time="0.005"/>
-  <testcase name="givenDistanceAndTime_ShouldReturnTotalFare" classname="com.bridgelabz.InvoiceServiceTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.InvoiceGeneratorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-08-09T18:45:36" hostname="DESKTOP-UD4BENK" time="0.009">
+  <properties/>
+  <testcase name="givenMultipleRides_WhenCalculated_ReturnInvoiceSummery" classname="com.bridgelabz.InvoiceGeneratorTest" time="0.008"/>
+  <testcase name="givenMultipleRides_WhenCalculated_ReturnTotalFare" classname="com.bridgelabz.InvoiceGeneratorTest" time="0.0"/>
+  <testcase name="givenDistanceAndTime_WhenCalculated_ReturnTotalFare" classname="com.bridgelabz.InvoiceGeneratorTest" time="0.0"/>
+  <testcase name="givenDistanceAndTime_WhenLessThanMinimumFareGetCalculated_ThenReturnMinimumFare" classname="com.bridgelabz.InvoiceGeneratorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
